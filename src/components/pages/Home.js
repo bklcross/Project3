@@ -1,12 +1,13 @@
 import React from "react";
+import { SummaryCard, SummaryBlock } from '../ServiceSummary/SummaryCard';
+import Jumbo from '../Jumbotron/Jumbotron';
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
-    <p>
-home page
-    </p>
+    <Jumbo />
   </div>
+
+
 );
 
 export default Home;

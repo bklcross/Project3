@@ -4,7 +4,7 @@ import Jumbo from '../Jumbotron/Jumbotron';
 
 const Home = () => (
   <div>
-    <Jumbo />
+      <Jumbo />
   </div>
 
 

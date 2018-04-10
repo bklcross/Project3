@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, Container, Image } from "semantic-ui-react";
+import "./Nav.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Nav = props => (
 
   <div>
-    <Menu fixed='top' inverted>
+    <Menu inverted>
       <Container>
         <Menu.Item header>
           <Link className="navbar-brand" to="/">
-            THERAPY
+            JESSICA KO'S THERAPY
           </Link>
         </Menu.Item>
 
@@ -35,7 +36,7 @@ const Nav = props => (
           <Menu.Item className={window.location.pathname === "/contact" ? "active" : ""}>
             <Link to="/contact">Contact</Link>
           </Menu.Item>
-          <Menu.Item className={window.location.pathname === "/login" ? "active" : ""}>
+          <Menu.Item className="login">
             <Link to="/login">Log In</Link>
           </Menu.Item>
 

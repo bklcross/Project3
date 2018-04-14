@@ -1,0 +1,10 @@
+.footerContainer
+{
+    background: rgba(0,0,0,.87);
+    padding: 2rem 3rem 2rem 3rem;
+    color: gray;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+

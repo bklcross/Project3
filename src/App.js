@@ -7,6 +7,7 @@ import Services from "./components/pages/Services";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
 import Jumbo from './components/Jumbotron/Jumbotron';
+import Foot from './components/Foot'
 
 const App = () => (
   <Router>
@@ -17,7 +18,7 @@ const App = () => (
       <Route exact path="/services" component={Services} />
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/contact" component={Contact} />
-
+      <Foot />
     </div>
   </Router>
 );

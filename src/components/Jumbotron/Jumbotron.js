@@ -3,9 +3,6 @@ import { Jumbotron, Button } from 'reactstrap';
 import "./Jumbotron.css";
 
 const Jumbo = (props) => {
-
-
-    
     return (
         <div>
           <Jumbotron className="jumbotron">

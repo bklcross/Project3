@@ -1,2 +1,2 @@
-export * from "./RecipeList";
-export * from "./RecipeListItem";
+export * from "./SummaryBlock";
+export * from "./SummaryCard";

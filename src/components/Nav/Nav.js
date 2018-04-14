@@ -7,11 +7,11 @@ import "./Nav.css"
 const Nav = props => (
 
   <div>
-    <Menu fixed='top' inverted>
+    <Menu inverted>
       <Container>
         <Menu.Item header>
           <Link className="navbar-brand" to="/">
-            THERAPY
+            JESSICA KO'S THERAPY
           </Link>
         </Menu.Item>
 

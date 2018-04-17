@@ -6,8 +6,8 @@ import "./Nav.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Nav = props => (
 
-  <div className="NavBar">
-    <Menu inverted>
+  <div>
+    <Menu inverted className="nav_remove_edge">
       <Container>
         <Menu.Item header>
           <Link className="navbar-brand" to="/">
@@ -32,6 +32,9 @@ const Nav = props => (
           </Menu.Item>
           <Menu.Item className={window.location.pathname === "/blog" ? "active" : ""}>
             <Link to="/blog">Blog</Link>
+          </Menu.Item>
+          <Menu.Item className={window.location.pathname === "/faqs" ? "active" : ""}>
+            <Link to="/faqs">FAQs</Link>
           </Menu.Item>
           <Menu.Item className={window.location.pathname === "/contact" ? "active" : ""}>
             <Link to="/contact">Contact</Link>

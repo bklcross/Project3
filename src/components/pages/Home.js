@@ -37,8 +37,6 @@ const Home = () => (
           </Col>
       </Row>
   </div>
-
-
 );
 
 export default Home;

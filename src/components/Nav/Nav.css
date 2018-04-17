@@ -7,5 +7,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 48%;
+    padding-left: 15px;
 }
+
+/* .nav_remove_edge
+{
+    border-radius: 0rem;
+} */

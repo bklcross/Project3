@@ -1,12 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Services from "./components/pages/Services";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
-import Jumbo from './components/Jumbotron/Jumbotron';
 import Foot from './components/Foot'
 
 const App = () => (

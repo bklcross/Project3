@@ -84,8 +84,43 @@
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
-
 .arrow {
     display: flex;
     text-align: right !important;
+}
+
+.blogTitle {
+    bottom: 0;
+}
+
+.blogSummary {
+    visibility:hidden;
+}
+
+.blog1:hover .blogTitle{
+    /* margin-top: 0;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+    top: -10px;
+}
+
+.blog1:hover .blogSummary{
+    /* margin-top: 0;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+    visibility:visible;
+}
+
+.blog2:hover .blogSummary{
+    /* margin-top: 0;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+    visibility:visible;
+}
+
+.blog3:hover .blogSummary{
+    /* margin-top: 0;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+    visibility:visible;
 }

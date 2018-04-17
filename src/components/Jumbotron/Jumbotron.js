@@ -5,9 +5,11 @@ import "./Jumbotron.css";
 const Jumbo = (props) => {
     return (
         <div>
+          {/* This jumbotron component is from reacetrap and being used as part of Jumbo which is  */}
           <Jumbotron className="jumbotron">
             <div>
                 <div>
+                    {/* If the client wants the video to be the background instead of pictures, uncomment the code below and comment out the pciture link in CSS file. */}
                     {/* <video id="bg-video" autoPlay="true" loop="loop" preload="metadata" muted="muted">
                     <source src="https://gcs-vimeo.akamaized.net/exp=1523608978~acl=%2A%2F708213662.mp4%2A~hmac=c97ace9c9f547d7150b8575d45650116de618b2e7e6b5c44491dea2bd0d98da5/vimeo-prod-skyfire-std-us/01/1512/8/207561527/708213662.mp4" type="video/ogg" />
                     </video> */}

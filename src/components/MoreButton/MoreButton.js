@@ -5,8 +5,6 @@ import "./MoreButton.css";
 
 const MoreButton = (props) => {
 
-
-    
     return (
         <Button outline color="secondary">More</Button>
     );

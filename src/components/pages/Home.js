@@ -1,42 +1,40 @@
-import React from "react";
-// import { SummaryCard, SummaryBlock } from '../ServiceSummary/SummaryCard';
+import React, { Component } from "react";
+import SummaryRow from '../ServiceSummary/SummaryRow';
 import Jumbo from '../Jumbotron/Jumbotron';
-import MoreButton from '../MoreButton/MoreButton';
-import { Col, Row, Container } from "../../components/Grid";
-import { Jumbotron, Button } from 'reactstrap';
+import IntroBox from "../IntroBox/IntroBox";
+import FillerRight from "../Filler/FillerRight";
+import FillerCenter from "../Filler/FillerCenter";
+import { BlogPreview } from "../BlogList/BlogPreview"
+import { Col, Row } from "components/Grid";
 
-
-const Home = () => (
-  <div>
-      <Jumbo />
-      <Row>
-          <Col size="md-3">
-            <article>
-              <h1>Family Counseling</h1>
-              <p> While over 70 % of counselors say they provide couples counseling, only 11 % have specific training in providing help
-              for couple issues.Our counselors are specially trained in providing a high level of care.Your marriage is worth it. </p>
-              <MoreButton />
-            </article>
+class Home extends Component {
+  state = {
+    thumbnail: "",
+    title: "",
+    summary: ""
+  }
+  
+  render() {
+    return(
+      <div>
+        <Jumbo />
+        <SummaryRow />
+        <FillerRight>
+          <Col size="md-12">
+            <p><i><a><u>View Our Services  &#x2192;</u></a></i></p>
           </Col>
-          <Col size="md-3">
-            <article>
-              <h1>Marriage</h1>
-              <p>Discernment Counseling is a research based approach to helping couples where one (or both) of you are questioning the 
-              commitment to stay married and one (or both) of you aren’t sure you have the motivation to work hard in marriage counseling to fix your problems.</p>
-              <MoreButton />
-            </article>
+        </FillerRight>
+        <IntroBox />
+        <FillerCenter>
+          <Col size="md-8">
+            <h3>Read the Latest Blogs</h3>
+            <p>I regularly write blogs that may be of value to you and your life. 
+              I invite you to check back often or to join our email list to receive notice of new blogs.</p>
           </Col>
-          <Col size="md-3">
-            <article>
-              <h1>Group</h1>
-              <p>Working on our issues in a small group of others who have similar issues while guided by professional counselors has proven to be highly 
-                  effective for experiencing change for a number of issues – often more effective than individual or couples counseling. Come explore the 
-                  many options we have for group therapy.</p>
-              <MoreButton />
-            </article>
-          </Col>
-      </Row>
+          </FillerCenter>
   </div>
 );
+  }
+}
 
 export default Home;

@@ -1,0 +1,10 @@
+/* Any style change applied to .row will affect all Row components used even in other components/pages. 
+(e.g. The display and justify-content statements will be run everytime Row component is used.) */
+.row {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#serviceSummary {
+    margin-bottom: 20px;
+}

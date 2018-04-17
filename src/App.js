@@ -6,6 +6,7 @@ import About from "./components/pages/About";
 import Services from "./components/pages/Services";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
+import Login from './components/pages/Login';
 import Jumbo from './components/Jumbotron/Jumbotron';
 import Foot from './components/Foot'
 
@@ -18,6 +19,7 @@ const App = () => (
       <Route exact path="/services" component={Services} />
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/login" component={Login} />
       <Foot />
     </div>
   </Router>

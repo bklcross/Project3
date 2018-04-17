@@ -1,0 +1,91 @@
+.blog1{
+    /* background: url("https://images.unsplash.com/photo-1496098868818-75736fc02eeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e7812dba20298669a5208331af3bf5c5&auto=format&fit=crop&w=800&q=60"); */
+    height: 500px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    /* padding-bottom: 10px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.blog1 img {
+    max-width: 100%;
+  
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    position: absolute;
+}
+
+.blog1:hover img{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.blog2 {
+    /* background: url("https://images.unsplash.com/photo-1519427658477-aaac2cb5d4e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c798109419cbb9a5b46ebc371d7230f4&auto=format&fit=crop&w=800&q=60"); */
+    margin-right: 10px;
+    width: 300px;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    /* padding-bottom: 10px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.blog2 img {
+    max-width: 100%;
+  
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    position: absolute;
+}
+
+.blog2:hover img{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.blog3{
+    /* background: url("https://images.unsplash.com/photo-1522093243371-296c79a66df4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c5df6bb1f7e73b7621f64a4da294fea0&auto=format&fit=crop&w=800&q=60"); */
+    width: 300px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    background-size: cover;
+    /* padding-bottom: 10px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.blog3 img {
+    max-width: 100%;
+  
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    position: absolute;
+}
+
+.blog3:hover img{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.arrow {
+    display: flex;
+    text-align: right !important;
+}

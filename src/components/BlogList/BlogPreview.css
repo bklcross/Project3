@@ -90,7 +90,7 @@
 }
 
 .blogTitle {
-    bottom: 0;
+    bottom: 10px !important;
 }
 
 .blogSummary {

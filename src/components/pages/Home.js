@@ -32,6 +32,7 @@ class Home extends Component {
               I invite you to check back often or to join our email list to receive notice of new blogs.</p>
           </Col>
           </FillerCenter>
+          <BlogPreview />
   </div>
 );
   }

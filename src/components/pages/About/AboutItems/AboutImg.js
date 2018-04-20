@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "components/Grid"
+import { Col } from "components/Grid"
 import Portrait from "../Img/Portrait.jpg"
 import "../About.css"
 

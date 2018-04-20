@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { Col, Row } from "components/Grid"
+import { Row } from "components/Grid"
 import AboutImg from "./AboutItems/AboutImg"
 import AboutText from "./AboutItems/AboutText"
 

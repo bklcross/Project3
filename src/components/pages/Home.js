@@ -5,7 +5,7 @@ import IntroBox from "../IntroBox/IntroBox";
 import FillerRight from "../Filler/FillerRight";
 import FillerCenter from "../Filler/FillerCenter";
 import { BlogPreview } from "../BlogList/BlogPreview"
-import { Col, Row } from "components/Grid";
+import { Col } from "components/Grid";
 
 class Home extends Component {
   state = {
@@ -31,7 +31,8 @@ class Home extends Component {
             <p>I regularly write blogs that may be of value to you and your life. 
               I invite you to check back often or to join our email list to receive notice of new blogs.</p>
           </Col>
-          </FillerCenter>
+        </FillerCenter>
+        <BlogPreview />
   </div>
 );
   }

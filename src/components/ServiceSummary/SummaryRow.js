@@ -1,8 +1,8 @@
 import React from "react";
-import MoreButton from '../MoreButton/MoreButton';
+// import MoreButton from '../MoreButton/MoreButton';
 import { Col, Row } from "components/Grid";
 import "./SummaryRow.css";
-import AOS from "aos";
+// import AOS from "aos";
 
 const SummaryRow = () => {
 

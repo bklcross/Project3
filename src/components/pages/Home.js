@@ -5,7 +5,7 @@ import IntroBox from "../IntroBox/IntroBox";
 import FillerRight from "../Filler/FillerRight";
 import FillerCenter from "../Filler/FillerCenter";
 import { BlogPreview } from "../BlogList/BlogPreview"
-import { Col, Row } from "components/Grid";
+import { Col } from "components/Grid";
 
 class Home extends Component {
   state = {
@@ -33,10 +33,9 @@ class Home extends Component {
           </Col>
         </FillerCenter>
         <BlogPreview />
-      </div>
-    )
+  </div>
+);
   }
-};
-
+}
 
 export default Home;

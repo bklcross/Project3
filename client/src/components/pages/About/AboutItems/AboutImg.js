@@ -7,7 +7,7 @@ import "../About.css"
 const AboutImg = () => (
     
         <Col size="md-6">
-        <img src={Portrait} alt={"About_Me_Portrait"} className="about_me_img"/> 
+                <img src={Portrait} alt={"About_Me_Portrait"} className="about_me_img"/> 
         </Col>
     
 )

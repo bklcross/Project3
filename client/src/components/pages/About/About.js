@@ -11,7 +11,6 @@ class About extends Component {
         <Row>
           <AboutImg />
           <AboutText />
-          <hr />
         </Row>
       </div>
     )

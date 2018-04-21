@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const Contact = () => (
-  <div>
-    <h1>Contact Page</h1>
-    <p>
-contact page
-    </p>
-  </div>
-);
-=======
 import React, { Component } from "react";
 import ImageContainer from "../../ImageContainer/ImageContainer";
 import FillerCenter from "../../Filler/FillerCenter";
@@ -41,6 +29,5 @@ class Contact extends Component {
     );
   }
 }
->>>>>>> master
 
 export default Contact;

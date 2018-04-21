@@ -6,6 +6,7 @@ const ImageContainer = () => {
     return(
         <div id="imageBackground">
             <p className="display-3" id="contactUs">Contact Us</p>
+            <hr />
         </div>
     );
 };

@@ -1,13 +1,24 @@
 import React, { Component } from "react";
 import { Col, Row } from "components/Grid";
 import { Input, TextArea, FormBtn } from "components/Form";
+import API from "../../utils/API";
+
 
 class ContactForm extends Component {
     state={
+        inquiries: [],
         firstName: "",
         lastName: "",
         email: "",
         message: ""
+    };
+
+    loadInquiries = () => {
+      API.getInquiries()
+        .then(res =>
+          this.setState({ inquiries: res.data, firstName: "", lastName: "", email: "", message: "" })
+        )
+        .catch(err => console.log(err));
     };
 
     handleInputChange = event => {
@@ -19,20 +30,19 @@ class ContactForm extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        console.log(event);
+        console.log(this.state);
         // this.handleInputChange(this.state);
         if (this.state.firstName && this.state.lastName && this.state.email) {
-            this.setState({
-                firstName: "",
-                lastName: "",
-                email: "",
-                message: ""
-            }, () => {
-                console.log(this.state);
-            });
+          API.saveInquiry({
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            message: this.state.message
+          })
+          .then(this.loadInquiries)
+            // .then((res) => this.loadInquiries())
+            .catch(err => console.log(err));
         }
-        // .catch(err => console.log(err));
-        // console.log(this.state);
     };
 
     render () {
@@ -41,26 +51,26 @@ class ContactForm extends Component {
           <Col size="md-6">
             <form>
               <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
+                value={this.state.firstName}
+                onChange={e => this.handleInputChange(e)}
                 name="firstName"
                 placeholder="First Name*"
               />
               <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
+                value={this.state.lastName}
+                onChange={e => this.handleInputChange(e)}
                 name="lastName"
                 placeholder="Last Name*"
               />
               <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
+                value={this.state.email}
+                onChange={e => this.handleInputChange(e)}
                 name="email"
                 placeholder="Email Address*"
               />
               <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
+                value={this.state.message}
+                onChange={e => this.handleInputChange(e)}
                 name="message"
                 placeholder="Your Message"
               />

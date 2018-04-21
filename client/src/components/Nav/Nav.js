@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Menu, Container } from "semantic-ui-react";
+import { Menu, Container, Image } from "semantic-ui-react";
 import "./Nav.css";
+import logo from "./logo.png"
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Nav = props => (
@@ -11,7 +12,7 @@ const Nav = props => (
       <Container>
         <Menu.Item header>
           <Link className="navbar-brand" to="/">
-            JESSICA KO'S THERAPY
+          <img src={logo} id="logo"></img>
           </Link>
         </Menu.Item>
 

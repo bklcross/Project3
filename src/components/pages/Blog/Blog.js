@@ -1,12 +1,19 @@
-import React from "react";
+import React, {Component} from "react"
+import BlogImg from "./BlogItems/BlogImg"
+import BlogTitle from "./BlogItems/BlogTitle"
+import BlogText from "./BlogItems/BlogText"
 
-const Blog = () => (
-  <div>
-    <h1>Blog Page</h1>
-    <p>
-This is blog
-    </p>
-  </div>
-);
+
+class Blog extends Component {
+  render() { 
+    return (
+      <div>
+        <BlogTitle/>
+        <BlogImg/>
+        <BlogText/>
+      </div>
+    )
+  }
+}
 
 export default Blog;

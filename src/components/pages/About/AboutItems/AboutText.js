@@ -8,7 +8,7 @@ const AboutText = () => (
   
     <Col size="md-6">
       <div className="about_text_container">
-        <h1>AboutMe</h1>
+        <h1>About Me</h1>
         <p>
           I was born and raised in Seoul, South Korea, and moved to California as a child. I received all my schooling in Southern California, then studied in Istanbul and worked in Madrid as an adult. My own personal experiences of living, learning, and reconciling multiple cultures and languages led to my passion for providing culturally sensitive counseling - especially for those who feel like there isn’t anyone who truly gets their experiences and struggles. 
         </p>

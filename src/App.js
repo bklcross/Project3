@@ -6,7 +6,6 @@ import About from "./components/pages/About/About";
 import Services from "./components/pages/Services/Services";
 import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/Contact/Contact";
-import Jumbo from './components/Jumbotron/Jumbotron';
 import FAQS from './components/pages/FAQS/FAQS';
 import Foot from './components/Foot';
 import Login from "./components/pages/Login";

@@ -1,0 +1,22 @@
+.fillerCenter {
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+    padding: 1rem, 2rem, 1rem, 2rem;
+    margin: auto;
+}
+
+.fillerLeft {
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+    padding: 1rem, 2rem, 1rem, 2rem;
+}
+
+.fillerRight {
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+    text-align: right;
+    padding-right: 150px;
+    /* float:right;
+    position: relative; */
+}
+

@@ -6,7 +6,8 @@ const FAQS = () => (
   <div>
     <h1>Frequently Asked Questions</h1>
     <p>
-		  <FAQGroup/>
+		<FAQGroup/>
+
     </p>
   </div>
 );

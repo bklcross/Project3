@@ -1,0 +1,20 @@
+#faqsBackground {
+    background-image: url("https://images.unsplash.com/photo-1483221480780-e794c60e11ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81dba6509cbc5398a94b6eaf6e5aa2c3&auto=format&fit=crop&w=1189&q=80");
+    background-repeat: repeat-x;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    /* background: linear-gradient(rgba(238, 236, 236, 0.336), rgba(238, 236, 236, 0.336)); */
+    background-size: cover;
+    text-align: center;
+    padding: 7rem 7rem 5rem 7rem;
+    bottom: 0;
+    background-position: center bottom;
+}
+
+#faqs {
+    font-size: 50px;
+    color: white;
+    vertical-align: middle;
+    line-height: 300px;
+}

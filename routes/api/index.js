@@ -39,7 +39,7 @@ router.post('/contact', (req, res) => {
         // setup email data with unicode symbols
         let mailOptions = {
             from: '"New Client" <nodemail.test@aol.com>', // sender address
-            to: 'waynesong21@gmail.com', // list of receivers
+            to: 'Therapist, waynesong21@gmail.com', // list of receivers
             subject: 'New Contact Request', // Subject line
             text: 'Hello world?', // plain text body
             html: output // html body

@@ -16,7 +16,13 @@
     margin-bottom: 20px !important;
     text-align: right;
     padding-right: 150px;
-    /* float:right;
-    position: relative; */
+    position: relative;
 }
 
+@media screen and (max-width: 768px)
+    {
+        .fillerRight  {
+            text-align: right !important;
+            justify-content: right;
+        }
+    }

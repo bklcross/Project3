@@ -5,7 +5,7 @@ const ImageContainer = () => {
 
     return(
         <div id="imageBackground">
-            <p className="display-3" id="contactUs">Contact Us</p>
+            <p className="display-3 wow flipInX" id="contactUs">Contact Us</p>
             <hr />
         </div>
     );

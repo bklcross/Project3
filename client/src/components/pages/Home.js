@@ -6,6 +6,8 @@ import FillerRight from "../Filler/FillerRight";
 import FillerCenter from "../Filler/FillerCenter";
 import { BlogPreview } from "../BlogList/BlogPreview"
 import { Col } from "components/Grid";
+import { Link } from "react-router-dom";
+import HomeContact from '../homeContact/HomeContact';
 
 class Home extends Component {
   state = {
@@ -21,7 +23,9 @@ class Home extends Component {
         <SummaryRow />
         <FillerRight>
           <Col size="md-12">
-            <p><i><a><u>View Our Services  &#x2192;</u></a></i></p>
+            <Link to="services">
+              <p id="viewServices"><i><u>View Our Services  &#x2192;</u></i></p>
+            </Link>
           </Col>
         </FillerRight>
         <IntroBox />
@@ -33,6 +37,11 @@ class Home extends Component {
           </Col>
         </FillerCenter>
         <BlogPreview />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <HomeContact />
   </div>
 );
   }

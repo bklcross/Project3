@@ -30,10 +30,11 @@
 
 .blog2 {
     /* background: url("https://images.unsplash.com/photo-1519427658477-aaac2cb5d4e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c798109419cbb9a5b46ebc371d7230f4&auto=format&fit=crop&w=800&q=60"); */
-    margin-right: 10px;
+    height: 500px;
     width: 300px;
-    color: white;
+    margin-right: 10px;
     margin-bottom: 30px;
+    color: white;
     display: flex;
     align-items: flex-end;
     background-size: cover;
@@ -59,11 +60,13 @@
 
 .blog3{
     /* background: url("https://images.unsplash.com/photo-1522093243371-296c79a66df4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c5df6bb1f7e73b7621f64a4da294fea0&auto=format&fit=crop&w=800&q=60"); */
+    height: 500px;
     width: 300px;
+    margin-right: 10px;
+    margin-bottom: 30px;
     color: white;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 30px;
     background-size: cover;
     /* padding-bottom: 10px; */
     overflow: hidden;
@@ -87,6 +90,7 @@
 .arrow {
     display: flex;
     text-align: right !important;
+    float: right;
 }
 
 .blogTitle {
@@ -94,7 +98,7 @@
 }
 
 .blogSummary {
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
 .blog1:hover .blogTitle{
@@ -104,12 +108,12 @@
     top: -10px;
 }
 
-.blog1:hover .blogSummary{
-    /* margin-top: 0;
+/* .blog1:hover .blogSummary{
+    margin-top: 0;
     -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease; */
+    transition: all 0.5s ease;
     visibility:visible;
-}
+} */
 
 .blog2:hover .blogSummary{
     /* margin-top: 0;

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
+import NavBar from "./components/Nav/Nav";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About/About";
 import Services from "./components/pages/Services/Services";
@@ -13,7 +13,7 @@ import Login from "./components/pages/Login";
 const App = () => (
   <Router>
     <div>
-      <Nav />
+      <NavBar />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />

@@ -2,13 +2,14 @@ import React from "react";
 import MoreButton from '../MoreButton/MoreButton';
 import { Col, Row } from "components/Grid";
 import "./IntroBox.css";
+import { Link } from "react-router-dom";
 // import AOS from "aos";
 // import { Image } from 'semantic-ui-react';
 
 const IntroBox = () => {
 
     return(
-      <div className="row" id="introBox">
+      <div className="row wow fadeInUp" data-wow-duration="2s" id="introBox" data-wow-delay="0.6s">
         {/* Row and Col are part of the Grid package and the props are "pre-defined". The size prop for the col is similar to if not the same as bootstrap. Style override might require creating a div that nests the row. */}
         <Row>
             <Col size="md-4">
@@ -20,7 +21,9 @@ const IntroBox = () => {
                 <p>I'm freaking the best therapist in San Diego. Don't even think about checking out other clinics. You're gonna just was time and money doing so.
                     I can save your marriage, your family, your life bros. So when you're done wasting your time going to different websites, give me a call.
                 </p>
-                <MoreButton />
+                <Link to="/about">
+                    <MoreButton />
+                </Link>
             </article>
             </Col>
         </Row>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Col, Row } from "components/Grid";
 import { Input, TextArea, FormBtn } from "components/Form";
 import API from "../../utils/API";
-import axios from "axios";
 
 
 class ContactForm extends Component {
@@ -33,29 +32,24 @@ class ContactForm extends Component {
         event.preventDefault();
         console.log(this.state);
         // this.handleInputChange(this.state);
-        // if (this.state.firstName && this.state.lastName && this.state.email) {
-        //   API.saveInquiry({
-        //     firstName: this.state.firstName,
-        //     lastName: this.state.lastName,
-        //     email: this.state.email,
-        //     message: this.state.message
-        //   })
-        axios.post("/api/contact", 
-              {
-              firstName: this.state.firstName,
-              lastName: this.state.lastName,
-              email: this.state.email,
-              message: this.state.message
-            }).then(this.loadInquiries)
+        if (this.state.firstName && this.state.lastName && this.state.email) {
+          API.saveInquiry({
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            message: this.state.message
+          })
+          .then(this.loadInquiries)
             // .then((res) => this.loadInquiries())
             .catch(err => console.log(err));
+        }
     };
 
     render () {
         return (
         <Row>
           <Col size="md-6">
-            <form className="wow fadeIn" method="POST" action ="contact">
+            <form>
               <Input
                 value={this.state.firstName}
                 onChange={e => this.handleInputChange(e)}

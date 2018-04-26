@@ -11,26 +11,28 @@ const SummaryRow = () => {
     return(
       <div className="row" id="serviceSummary">
           <Row>
-            <Col size="md-3">
+            <Col size="md-2">
                 <article data-aos="fade-up" data-aos-delay="3000">
-                    <h1>Family Counseling</h1>
-                    <p> While over 70 % of counselors say they provide couples counseling, only 11 % have specific training in providing help
-                    for couple issues.Our counselors are specially trained in providing a high level of care.Your marriage is worth it. </p>
+                    <h2>Multicultural Couples</h2>
+                    <p> I can support you and your partner to create and develop a harmonious and unique culture that will support your relationship to thrive.</p>
                 </article>
             </Col>
-            <Col size="md-3">
+            <Col size="md-2">
                 <article>
-                    <h1>Marriage</h1>
-                    <p>Discernment Counseling is a research based approach to helping couples where one (or both) of you are questioning the 
-                    commitment to stay married and one (or both) of you aren’t sure you have the motivation to work hard in marriage counseling to fix your problems.</p>
+                    <h2>Couples Therapy</h2>
+                    <p>Learn about yourself and your partner, and how you can be in an enriching and nurturing relationship as your most intimate and vulnerable self.</p>
                 </article>
             </Col>
-            <Col size="md-3">
+            <Col size="md-2">
                 <article>
-                    <h1>Group</h1>
-                    <p>Working on our issues in a small group of others who have similar issues while guided by professional counselors has proven to be highly 
-                        effective for experiencing change for a number of issues – often more effective than individual or couples counseling. Come explore the 
-                        many options we have for group therapy.</p>
+                    <h2>Asian American Issues</h2>
+                    <p>Use therapy to learn how to cope with issues that are so specific to your experience, and begin to live a life of peace and harmony in your own unique cultural context.</p>
+                </article>
+            </Col>
+            <Col size="md-2">
+                <article>
+                    <h2>Families Dealing with Cancer</h2>
+                    <p>Therapy can help regain control over how the cancer affects the relationships that are the dearest to you.</p>
                 </article>
             </Col>
          </Row>

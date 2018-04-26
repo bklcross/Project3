@@ -6,7 +6,7 @@ class Foot extends Component {
         return (
             <div>
                 <div className="footerContainer">
-                    <div>© Copyright 2018 Jessica Ko</div>
+                    <div>Jessica Ko © 2018 All Rights Reserved</div>
                 </div>
             </div>
         )

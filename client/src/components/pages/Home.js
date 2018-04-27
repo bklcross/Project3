@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Breaks from "../Breaks/Breaks";
 import SummaryRow from '../ServiceSummary/SummaryRow';
 import Jumbo from '../Jumbotron/Jumbotron';
 import IntroBox from "../IntroBox/IntroBox";
@@ -20,6 +21,7 @@ class Home extends Component {
     return(
       <div>
         <Jumbo />
+        <Breaks />
         <SummaryRow />
         <FillerRight>
           <Col size="md-12">
@@ -28,7 +30,11 @@ class Home extends Component {
             </Link>
           </Col>
         </FillerRight>
+        <Breaks />
         <IntroBox />
+        <Breaks />
+        <br />
+        <br />
         <FillerCenter>
           <Col size="md-8">
             <h3>Read the Latest Blogs</h3>
@@ -37,10 +43,8 @@ class Home extends Component {
           </Col>
         </FillerCenter>
         <BlogPreview />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <Breaks />
+        <Breaks />
         <HomeContact />
   </div>
 );

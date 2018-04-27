@@ -17,7 +17,7 @@ const Jumbo = (props) => {
                 <hr className="my-2" />
                 <p className="lead">It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
                 <p className="lead">
-                <Button color="secondary">Learn More</Button>
+                <Button color="primary">Learn More</Button>
                 </p>
             </div>
           </div>

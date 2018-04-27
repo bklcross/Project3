@@ -24,12 +24,13 @@ router.post('/contact', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: 'smtp.aol.com',
-            port: 587,
-            secure: false, // true for 465, false for other ports
+            // host: 'smtp.aol.com',
+            // port: 587,
+            // secure: false, // true for 465, false for other ports
+            service: "AOL",
             auth: {
-                user: "nodemail.test@aol.com", // generated ethereal user
-                pass: "node1234" // generated ethereal password
+                user: "waynesong21@aol.com", // generated ethereal user
+                pass: "sjskwkfgo6" // generated ethereal password
             },
             tls: {
                 rejectUnauthorized: false
@@ -38,7 +39,7 @@ router.post('/contact', (req, res) => {
 
         // setup email data with unicode symbols
         let mailOptions = {
-            from: '"New Client" <nodemail.test@aol.com>', // sender address
+            from: '"New Client" <waynesong21@aol.com>', // sender address
             to: 'Therapist, waynesong21@gmail.com', // list of receivers
             subject: 'New Contact Request', // Subject line
             text: 'Hello world?', // plain text body

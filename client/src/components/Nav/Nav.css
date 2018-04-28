@@ -1,11 +1,15 @@
 .login
 {
-float: right;
+    float: right !important;
 }
 
 #logo{
     height: 50px !important;
     width: 50px !important;
+}
+
+li {
+    display: inline;
 }
 
 #logoBox {
@@ -21,9 +25,8 @@ float: right;
     border-radius: 0rem;
 } */
 
-#navbar {
-    margin: 0;
-    padding: 0;
+.navbar {
+    margin-bottom: 0px !important;
 }
 
 nav {

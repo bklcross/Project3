@@ -3,16 +3,18 @@
 .row {
     /* display: flex !important; */
     justify-content: center !important;
+    margin: 0 auto;
 }
 
 #serviceSummary {
     margin-bottom: 20px;
-    font-size: 120%;
+    font-size: 100%;
+    overflow: hidden;
 }
 
 #summary123 {
-    margin-left: 3px;
-    margin-right: 3px;
+    /* margin-left: 3px;
+    margin-right: 3px; */
 }
 
 /*---make a basic box ---*/

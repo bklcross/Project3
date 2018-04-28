@@ -26,6 +26,7 @@ class FAQs extends Component {
 
     return (
       <div className="FAQcontainer">
+        <h1 className="FAQtitle">Frequently Asked Qestions</h1>
         <FAQCard question={this.state.q1.question} answer={this.state.q1.answer} />
         <FAQCard question={this.state.q2.question} answer={this.state.q2.answer} />
         <FAQCard question={this.state.q3.question} answer={this.state.q3.answer} />

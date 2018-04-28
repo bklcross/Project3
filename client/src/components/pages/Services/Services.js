@@ -1,11 +1,13 @@
 import React, {Component} from "react"
-import ServiceTitle from "./ServiceItems/ServiceTitle"
 import "./Service.css"
-import { Col, Row } from "components/Grid";
+import { Col, Row } from "components/Grid"
 import Cancer from "./Img/Cancer.jpg"
 import Identity from "./Img/Identity.jpg"
 import Couples from "./Img/Couples.jpg"
 import Culture from "./Img/Cultural.jpg"
+import ServiceImg from "./Img/Service.jpg"
+import ImageContainer from "../../ImageContainer/ImageContainer";
+
 
 
 
@@ -21,12 +23,12 @@ class Services extends Component {
     
     const ServiceCard = ({image, alt, title, text}) => {
       return (
-      <div className="col-md-2">
-        <div class="card mb-3 servicecard">
+      <div className="col-md-3">
+        <div className="servicecard">
           <img src={image} alt={alt}/> 
           <div class="card-body">
-              <h4 class="card-title">{title}</h4>
-              <p class="card-text">{text}</p>
+              <h4 className="cardtitle">{title}</h4>
+              <p>{text}</p>
           </div>
         </div>
       </div>
@@ -36,15 +38,28 @@ class Services extends Component {
     return (
       <div className="servicecontainer">
         <Row>
-        <div>
-          <ServiceTitle />
-        </div>
+          <div>
+            <h1 className="servicetitle">My Services</h1>
+            <hr className="serviceline"/>
+          </div>
         </Row>
         <Row>
-          <ServiceCard image={this.state.culture.image} alt={this.state.culture.alt} title={this.state.culture.title} text={this.state.culture.text}/>
-          <ServiceCard image={this.state.couples.image} alt={this.state.couples.alt} title={this.state.couples.title} text={this.state.couples.text}/>
-          <ServiceCard image={this.state.identity.image} alt={this.state.identity.alt} title={this.state.identity.title} text={this.state.identity.text}/>
-          <ServiceCard image={this.state.cancer.image} alt={this.state.cancer.alt} title={this.state.cancer.title} text={this.state.cancer.text}/>
+          <div className="servicecards">
+            <ServiceCard image={this.state.culture.image} alt={this.state.culture.alt} title={this.state.culture.title} text={this.state.culture.text}/>
+            <ServiceCard image={this.state.couples.image} alt={this.state.couples.alt} title={this.state.couples.title} text={this.state.couples.text}/>
+            <ServiceCard image={this.state.identity.image} alt={this.state.identity.alt} title={this.state.identity.title} text={this.state.identity.text}/>
+            <ServiceCard image={this.state.cancer.image} alt={this.state.cancer.alt} title={this.state.cancer.title} text={this.state.cancer.text}/>
+          </div>
+        </Row>
+        <Row>
+        <div className="serviceimage">
+          <p className="servicetext">
+            My mission is to be an ambassador for healing and restoration by collaborating with couples
+             and individuals to find wholeness and newness. I partner with clients to find identity, 
+             confidence, and comfort in their relationships and in themselves. And I work to foster the 
+             understanding of personal and relational history, culture, and contexts to breathe life into the present. 
+          </p>
+        </div>
         </Row>
       </div>
     )

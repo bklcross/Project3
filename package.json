@@ -19,10 +19,12 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "bcrypt": "^2.0.1",
     "body-parser": "^1.17.2",
     "concurrently": "^3.5.1",
     "express": "^4.15.4",
     "mongoose": "^4.11.7",
+    "mysql": "^2.15.0",
     "nodemailer": "^4.6.4",
     "react-bootstrap": "^0.32.1"
   }

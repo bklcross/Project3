@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Col, Row } from "components/Grid";
-import { Input, TextArea, FormBtn } from "components/Form";
+import { Col, Row } from "../../components/Grid";
+import { Input, TextArea, FormBtn } from "../../components/Form";
 import API from "../../utils/API";
 import axios from "axios";
 

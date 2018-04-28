@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Accordion, Icon } from 'semantic-ui-react'
-import "./FAQs.css"
+import "./FAQS.css"
 
-export default class FAQs extends Component {
+export default class FAQS extends Component {
   state = { activeIndex: 0 }
 
   handleClick = (e, titleProps) => {

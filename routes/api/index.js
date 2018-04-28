@@ -30,7 +30,7 @@ router.post('/contact', (req, res) => {
             service: "AOL",
             auth: {
                 user: "waynesong21@aol.com", // generated ethereal user
-                pass: "sjskwkfgo6" // generated ethereal password
+                pass: "" // generated ethereal password
             },
             tls: {
                 rejectUnauthorized: false

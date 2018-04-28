@@ -15,11 +15,8 @@ class ContactForm extends Component {
     };
 
     loadInquiries = () => {
-      API.getInquiries()
-        .then(res =>
-          this.setState({ inquiries: res.data, firstName: "", lastName: "", email: "", message: "" })
-        )
-        .catch(err => console.log(err));
+
+        this.setState({ firstName: "", lastName: "", email: "", message: "" });
     };
 
     handleInputChange = event => {
@@ -30,25 +27,25 @@ class ContactForm extends Component {
     };
 
     handleFormSubmit = event => {
-        event.preventDefault();
-        console.log(this.state);
-        // this.handleInputChange(this.state);
-        // if (this.state.firstName && this.state.lastName && this.state.email) {
-        //   API.saveInquiry({
-        //     firstName: this.state.firstName,
-        //     lastName: this.state.lastName,
-        //     email: this.state.email,
-        //     message: this.state.message
-        //   })
-        axios.post("/api/contact",
-              {
-              firstName: this.state.firstName,
-              lastName: this.state.lastName,
-              email: this.state.email,
-              message: this.state.message
-            }).then(this.loadInquiries)
-            // .then((res) => this.loadInquiries())
-            .catch(err => console.log(err));
+      event.preventDefault();
+      console.log(this.state);
+      // this.handleInputChange(this.state);
+      // if (this.state.firstName && this.state.lastName && this.state.email) {
+      //   API.saveInquiry({
+      //     firstName: this.state.firstName,
+      //     lastName: this.state.lastName,
+      //     email: this.state.email,
+      //     message: this.state.message
+      //   })
+      axios.post("/api/contact", 
+            {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            message: this.state.message
+          }).then(this.loadInquiries())
+          // .then((res) => this.loadInquiries())
+          .catch(err => console.log(err));
     };
 
     render () {

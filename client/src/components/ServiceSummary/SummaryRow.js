@@ -1,7 +1,10 @@
 import React from "react";
-import { Col, Row } from "../../components/Grid";
+// import MoreButton from '../MoreButton/MoreButton';
+import { Col, Row } from "../Grid";
 import "./SummaryRow.css";
+// import AOS from "aos";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const SummaryRow = () => {
 
@@ -11,7 +14,7 @@ const SummaryRow = () => {
       <div className="row" id="serviceSummary">
           <Row>
             <div className="col-12 col-lg-2 wow fadeInLeft">
-                <article data-aos="fade-up" data-aos-delay="3000" id="blog1">
+                <article data-aos="fade-up" data-aos-delay="3000">
                     <h2>Multicultural Couples</h2>
                    <p> I can support you and your partner to create and develop a harmonious
                        and unique culture that will support your relationship to thrive.</p>

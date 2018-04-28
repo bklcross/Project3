@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import "./Service.css"
-import { Col, Row } from "../../../components/Grid"
+import { Col, Row } from "../../Grid"
 import Cancer from "./Img/Cancer.jpg"
 import Identity from "./Img/Identity.jpg"
 import Couples from "./Img/Couples.jpg"

@@ -1,5 +1,5 @@
 #homeContactBackground {
-    background-image: url("https://images.unsplash.com/photo-1519168459397-81006826b29b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3478504060aa7dc22d21ec51a697bf84&auto=format&fit=crop&w=1500&q=80");
+    background-image: url("https://images.unsplash.com/reserve/NV0eHnNkQDHA21GC3BAJ_Paris%20Louvr.jpg?ixlib=rb-0.3.5&s=bb1c3493d07ba4a0ed5ec6e0b4321f0f&auto=format&fit=crop&w=1500&q=80");
     background-repeat: repeat-x;
     height: 300px;
     width: 100%;
@@ -28,4 +28,10 @@
     color: white;
     vertical-align: middle;
     /* line-height: 300px; */
+}
+
+@media (max-width: 768px) {
+    #connectWithMe {
+        font-size: 200%;
+    }
 }

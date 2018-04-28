@@ -1,8 +1,12 @@
 import React from "react";
 import LoginScreen from '../Login/Loginscreen';
 
+const divStyle ={
+  textAlign: "center"
+}
+
 const Login = () => (
-  <div>
+  <div style={divStyle}>
   	<LoginScreen />
   </div>
 );

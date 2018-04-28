@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import "./Jumbotron.css";
+import { Link } from "react-router-dom";
+
 
 const Jumbo = (props) => {
     return (
@@ -17,7 +19,9 @@ const Jumbo = (props) => {
                 <hr className="my-2" />
                 <p className="lead">Learn about yourself and your partner, and how you can be in an enriching and nurturing relationship as your most intimate and vulnerable self.</p>
                 <p className="lead">
+                <Link to="/services">
                 <Button color="primary">Learn More</Button>
+                </Link>
                 </p>
             </div>
           </div>

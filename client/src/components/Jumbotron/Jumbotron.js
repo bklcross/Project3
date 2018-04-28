@@ -15,7 +15,7 @@ const Jumbo = (props) => {
                 <h1 className="display-3" id="jumboh">Building Intimate Relationships</h1>
                 <p className="lead">Getting to the heart of relationships.</p>
                 <hr className="my-2" />
-                <p className="lead">It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
+                <p className="lead">Learn about yourself and your partner, and how you can be in an enriching and nurturing relationship as your most intimate and vulnerable self.</p>
                 <p className="lead">
                 <Button color="primary">Learn More</Button>
                 </p>

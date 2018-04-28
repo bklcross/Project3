@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "components/Grid";
+import { Row } from "../../components/Grid";
 import "./Filler.css";
 
 // Filler components are used when there needs to be a div with mostly white blank space with

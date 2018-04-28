@@ -20,7 +20,7 @@ class Services extends Component {
   }
 
   render() {
-    
+
     const ServiceCard = ({image, alt, title, text}) => {
       return (
       <div className="col-md-3">
@@ -66,4 +66,4 @@ class Services extends Component {
   }
 }
 
-export default Services; 
+export default Services;

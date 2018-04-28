@@ -1,6 +1,6 @@
 import React from "react";
 import MoreButton from '../MoreButton/MoreButton';
-import { Col, Row } from "components/Grid";
+import { Col, Row } from "../../components/Grid";
 import "./IntroBox.css";
 import { Link } from "react-router-dom";
 // import AOS from "aos";

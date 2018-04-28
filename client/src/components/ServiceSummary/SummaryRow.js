@@ -1,6 +1,6 @@
 import React from "react";
 // import MoreButton from '../MoreButton/MoreButton';
-import { Col, Row } from "../../Grid";
+import { Col, Row } from "../Grid";
 import "./SummaryRow.css";
 // import AOS from "aos";
 import 'bootstrap/dist/css/bootstrap.min.css';

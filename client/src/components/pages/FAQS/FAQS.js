@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { Row } from "components/Grid"
+import { Row } from "../../Grid"
 
 class FAQS extends Component {
   state = {

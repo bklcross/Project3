@@ -23,4 +23,6 @@ router.post('/register',login.register);
 router.post('/login',login.login);
 
 app.use('/api', router);
-app.listen(4000);
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});

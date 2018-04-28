@@ -2,6 +2,7 @@ var express = require("express");
 var login = require('./routes/loginroutes');
 var bodyParser = require('body-parser');
 var app = express();
+const PORT = process.env.PORT || 3001;
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
@@ -26,4 +27,6 @@ router.post('/register',login.register);
 router.post('/login',login.login);
 
 app.use('/api', router);
-app.listen(4000);
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});

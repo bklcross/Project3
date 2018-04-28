@@ -1,7 +1,7 @@
 import React, {Component} from "react"
-import { Row } from "components/Grid"
+import { Row } from "../../Grid"
 
-class FAQS extends Component {
+class FAQs extends Component {
   state = {
     q1: {question: "1. Why should I go to therapy?", answer: "You should go to therapy because everyone should go to therapy. Life is hard, and life’s struggles can leave marks on us that continue to hurt us long after they’ve passed. Therapy is a way of prioritizing yourself and your needs, and it’s an active step in the lifelong journey of healing and restoration. There is no shame in loving and caring for yourself and your loved ones."},
     q2: {question: "2. What is your fee and what is a sliding scale?", answer: "A sliding scale means that the fee you pay depends on your needs: what sort of services you need, the length of sessions, and, most importantly, what you can afford to pay. My sliding scale is $60-$120, and I will work with you to determine a fee that works best for you while meeting your needs."},
@@ -37,4 +37,4 @@ class FAQS extends Component {
   }
 }
 
-export default FAQS;
+export default FAQs;

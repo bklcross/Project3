@@ -2,6 +2,7 @@ var express = require("express");
 var login = require('./routes/loginroutes');
 var bodyParser = require('body-parser');
 var app = express();
+const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

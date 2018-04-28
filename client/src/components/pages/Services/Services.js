@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import "./Service.css"
-import { Col, Row } from "components/Grid"
+import { Col, Row } from "../../../components/Grid"
 import Cancer from "./Img/Cancer.jpg"
 import Identity from "./Img/Identity.jpg"
 import Couples from "./Img/Couples.jpg"
@@ -25,7 +25,7 @@ class Services extends Component {
       return (
       <div className="col-md-3">
         <div className="servicecard">
-          <img src={image} alt={alt}/> 
+          <img src={image} alt={alt}/>
           <div class="card-body">
               <h4 className="cardtitle">{title}</h4>
               <p>{text}</p>
@@ -55,9 +55,9 @@ class Services extends Component {
         <div className="serviceimage">
           <p className="servicetext">
             My mission is to be an ambassador for healing and restoration by collaborating with couples
-             and individuals to find wholeness and newness. I partner with clients to find identity, 
-             confidence, and comfort in their relationships and in themselves. And I work to foster the 
-             understanding of personal and relational history, culture, and contexts to breathe life into the present. 
+             and individuals to find wholeness and newness. I partner with clients to find identity,
+             confidence, and comfort in their relationships and in themselves. And I work to foster the
+             understanding of personal and relational history, culture, and contexts to breathe life into the present.
           </p>
         </div>
         </Row>

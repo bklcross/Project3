@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { Row } from "components/Grid"
+import { Row } from "../../../components/Grid"
 
 class FAQS extends Component {
   state = {
@@ -12,7 +12,7 @@ class FAQS extends Component {
   }
 
   render() {
-    
+
   const FAQCard = ({question, answer}) => {
     return (
       <div className="FAQcard">

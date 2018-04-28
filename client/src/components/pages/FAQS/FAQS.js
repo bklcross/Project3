@@ -62,7 +62,7 @@ import React, { Component } from 'react'
 import { Accordion, Icon } from 'semantic-ui-react'
 import "./FAQs.css"
 
-export default class AccordionExampleStyled extends Component {
+export default class FAQs extends Component {
   state = { activeIndex: 0 }
 
   handleClick = (e, titleProps) => {
@@ -79,7 +79,7 @@ export default class AccordionExampleStyled extends Component {
     return (
       <div className="FAQcontainer">
       <h1 className="FAQtitle">Frequently Asked Questions</h1>
-      <div>
+      <div className="FAQcontent">
       <Accordion styled>
         <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
           <Icon name='dropdown' />

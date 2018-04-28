@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import ServiceTitle from "./ServiceItems/ServiceTitle"
 import "./Service.css"
-import { Col, Row } from "components/Grid";
+import { Col, Row } from "../../../components/Grid";
 import Cancer from "./Img/Cancer.jpg"
 import Identity from "./Img/Identity.jpg"
 import Couples from "./Img/Couples.jpg"
@@ -18,12 +18,12 @@ class Services extends Component {
   }
 
   render() {
-    
+
     const ServiceCard = ({image, alt, title, text}) => {
       return (
       <div className="col-md-2">
         <div class="card mb-3 servicecard">
-          <img src={image} alt={alt}/> 
+          <img src={image} alt={alt}/>
           <div class="card-body">
               <h4 class="card-title">{title}</h4>
               <p class="card-text">{text}</p>
@@ -51,4 +51,4 @@ class Services extends Component {
   }
 }
 
-export default Services; 
+export default Services;
